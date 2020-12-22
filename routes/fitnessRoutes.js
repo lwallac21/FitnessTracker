@@ -39,7 +39,7 @@ router.get("/api/workouts", (req, res) => {
 router.get("/api/workouts/range", (req, res) => {
   Workout.find({})
     .then(results => {
-      console.log(`dbWorkouts = ${results}`)
+      console.log(`allWorkouts = ${results}`)
       res.json(results);
     })
     .catch(err => {
