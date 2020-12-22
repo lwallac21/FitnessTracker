@@ -13,6 +13,7 @@ app.use(express.static("public"));
 
 const URL = process.env.MONGODB_URI || "mongodb://localhost/workout"
 
+
 mongoose.connect(URL, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
